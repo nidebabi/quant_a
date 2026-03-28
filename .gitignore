@@ -3,6 +3,20 @@ __pycache__/
 *.pyc
 streamlit.err.log
 streamlit.out.log
-data/
+
+# runtime artifacts
 reports/
 .env
+
+# data assets: ignore bulk data, keep folder skeleton + metadata docs
+data/*
+!data/.gitkeep
+!data/raw/
+!data/raw/.gitkeep
+!data/features/
+!data/features/.gitkeep
+!data/labels/
+!data/labels/.gitkeep
+!data/metadata/
+!data/metadata/.gitkeep
+!data/metadata/README.md
